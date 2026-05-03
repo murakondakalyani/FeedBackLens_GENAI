@@ -1,0 +1,29 @@
+{% from "_layout.html" import head, shell, topbar, scripts %}
+<!DOCTYPE html>
+<html lang="en">
+<head>{{ head("FeedbackLens AI Insights") }}</head>
+<body data-page="insights">
+    {{ shell(active_page) }}
+    <main class="command-shell">
+        {{ topbar("AI Insights Feed", "Assistant Online") }}
+
+        <section class="page-hero reveal">
+            <div class="hero-kicker"><i class="fa-solid fa-message"></i> AI Insights Page</div>
+            <h1>Recommendations generated from customer emotion signals</h1>
+            <p>Premium AI summaries, complaint detection, opportunity recommendations, and praise insights in one assistant feed.</p>
+        </section>
+
+        <section class="insight-theater reveal">
+            <div class="section-title"><span>AI Assistant Conversation</span><h2>Signals your team can act on</h2></div>
+            <div class="conversation-feed">
+                <div class="ai-bubble green"><i class="fa-solid fa-truck-fast"></i><p>AI detected delivery delays increasing by 23% across recent review clusters.</p></div>
+                <div class="ai-bubble purple"><i class="fa-solid fa-box-open"></i><p>Product packaging is praised frequently and can be used as a trust-building highlight.</p></div>
+                <div class="ai-bubble blue"><i class="fa-solid fa-rotate-left"></i><p>Refund requests are linked to shipping damage, not product dissatisfaction.</p></div>
+                <div class="ai-bubble pink"><i class="fa-solid fa-lightbulb"></i><p>Opportunity: improve tracking updates to reduce anxiety before delivery.</p></div>
+                <div class="typing-oracle"><span id="homeTyping"></span><b></b></div>
+            </div>
+        </section>
+    </main>
+    {{ scripts() }}
+</body>
+</html>

@@ -1,0 +1,39 @@
+{% from "_layout.html" import head, shell, topbar, scripts %}
+<!DOCTYPE html>
+<html lang="en">
+<head>{{ head("FeedbackLens AI Visual Insights") }}</head>
+<body data-page="visual">
+    {{ shell(active_page) }}
+    <main class="command-shell">
+        {{ topbar("Visual Insights Core", "Neural View") }}
+
+        <section class="visual-lab reveal">
+            <div class="neural-stage enlarged">
+                <div class="connection-line line-upload"></div>
+                <div class="connection-line line-chart"></div>
+                <div class="connection-line line-insight"></div>
+                <div class="sentiment-sphere">
+                    <div class="sphere-ring ring-one"></div>
+                    <div class="sphere-ring ring-two"></div>
+                    <div class="sphere-ring ring-three"></div>
+                    <div class="sphere-core">
+                        <i class="fa-solid fa-brain"></i>
+                        <span>FeedbackLens</span>
+                        <strong>Neural Engine</strong>
+                    </div>
+                    <div class="orbit-node node-positive">Joy</div>
+                    <div class="orbit-node node-negative">Pain</div>
+                    <div class="orbit-node node-growth"><i class="fa-solid fa-bolt"></i></div>
+                </div>
+                <div class="holo-readout readout-a"><span>Live Sentiment Pulse</span><strong>94%</strong></div>
+                <div class="holo-readout readout-b"><span>Network Nodes</span><strong>128</strong></div>
+            </div>
+            <div class="visual-side">
+                <div class="signal-panel reveal delay-1 tilt-card"><div class="panel-heading"><span>Floating Data Nodes</span><i class="fa-solid fa-network-wired"></i></div><p>Customer emotions connect to sentiment clusters, complaint signals, and opportunity zones.</p></div>
+                <div class="signal-panel reveal delay-2 tilt-card"><div class="panel-heading"><span>Live Pulse</span><i class="fa-solid fa-heart-pulse"></i></div><div class="pulse-stack"><span></span><span></span><span></span><span></span></div></div>
+            </div>
+        </section>
+    </main>
+    {{ scripts() }}
+</body>
+</html>

@@ -1,0 +1,66 @@
+{% from "_layout.html" import head, shell, topbar, scripts %}
+<!DOCTYPE html>
+<html lang="en">
+<head>{{ head("FeedbackLens AI Dashboard") }}</head>
+<body data-page="dashboard">
+    {{ shell(active_page) }}
+    <main class="command-shell">
+        {{ topbar("Dashboard Command Center", "Demo Ready") }}
+
+        <section class="hero-command">
+            <div class="hero-copy reveal">
+                <div class="hero-kicker"><i class="fa-solid fa-bolt-lightning"></i> Customer emotion intelligence</div>
+                <h1>Turn Reviews into Revenue Intelligence</h1>
+                <p>AI detects sentiment, hidden complaints, product opportunities, and customer emotions instantly.</p>
+                <div class="rotator-line">
+                    <span>Analyzing</span>
+                    <strong id="wordRotator">Reviews</strong>
+                    <span>in real time</span>
+                </div>
+                <div class="hero-actions">
+                    <a class="primary-action magnetic" href="/scanner"><i class="fa-solid fa-rocket"></i> Launch Analysis</a>
+                    <a class="secondary-action magnetic" href="/visual"><i class="fa-solid fa-circle-play"></i> Watch Demo</a>
+                </div>
+            </div>
+
+            <div class="neural-stage reveal delay-1">
+                <div class="connection-line line-upload"></div>
+                <div class="connection-line line-chart"></div>
+                <div class="connection-line line-insight"></div>
+                <div class="sentiment-sphere">
+                    <div class="sphere-ring ring-one"></div>
+                    <div class="sphere-ring ring-two"></div>
+                    <div class="sphere-ring ring-three"></div>
+                    <div class="sphere-core">
+                        <i class="fa-solid fa-brain"></i>
+                        <span>FeedbackLens</span>
+                        <strong>Neural Engine</strong>
+                    </div>
+                    <div class="orbit-node node-positive">72%</div>
+                    <div class="orbit-node node-negative">18%</div>
+                    <div class="orbit-node node-growth"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                </div>
+                <div class="holo-readout readout-a"><span>Emotion Map</span><strong>9.4x</strong></div>
+                <div class="holo-readout readout-b"><span>Signal State</span><strong>Live</strong></div>
+            </div>
+        </section>
+
+        <section class="metric-constellation">
+            <article class="metric-capsule reveal tilt-card"><div class="radial-meter" data-value="72"><span>72%</span></div><div><small>Positive</small><strong>Customer Delight</strong></div></article>
+            <article class="metric-capsule reveal delay-1 tilt-card"><div class="radial-meter danger" data-value="18"><span>18%</span></div><div><small>Negative</small><strong>Friction Signals</strong></div></article>
+            <article class="metric-capsule reveal delay-2 tilt-card"><div class="radial-meter calm" data-value="10"><span>10%</span></div><div><small>Neutral</small><strong>Watchlist Zone</strong></div></article>
+            <article class="metric-capsule reveal delay-3 tilt-card"><div class="radial-meter trust" data-value="91"><span>91%</span></div><div><small>Trust Score</small><strong>Decision Ready</strong></div></article>
+        </section>
+
+        <section class="insight-theater reveal">
+            <div class="section-title"><span>AI Overview Preview</span><h2>The engine turns raw feedback into strategy</h2></div>
+            <div class="conversation-feed">
+                <div class="ai-bubble green"><i class="fa-solid fa-truck-fast"></i><p>Delivery complaints are detected and grouped automatically.</p></div>
+                <div class="ai-bubble purple"><i class="fa-solid fa-box-open"></i><p>Product praise becomes clear business proof.</p></div>
+                <div class="ai-bubble blue"><i class="fa-solid fa-arrow-trend-up"></i><p>Trend signals reveal where revenue opportunities are forming.</p></div>
+            </div>
+        </section>
+    </main>
+    {{ scripts() }}
+</body>
+</html>

@@ -1,0 +1,59 @@
+{% macro shell(active_page) %}
+<div class="cursor-glow" id="cursorGlow"></div>
+<canvas id="particleCanvas"></canvas>
+<div class="mesh-field"></div>
+<div class="scan-lines"></div>
+
+<aside class="command-rail">
+    <a class="rail-brand" href="/">
+        <span><i class="fa-solid fa-brain"></i></span>
+        <strong>FeedbackLens AI</strong>
+    </a>
+    <nav>
+        <a class="{{ 'active' if active_page == 'dashboard' else '' }}" href="/"><i class="fa-solid fa-table-cells-large"></i><span>Dashboard</span></a>
+        <a class="{{ 'active' if active_page == 'scanner' else '' }}" href="/scanner"><i class="fa-solid fa-crosshairs"></i><span>Scanner</span></a>
+        <a class="{{ 'active' if active_page == 'analytics' else '' }}" href="/analytics"><i class="fa-solid fa-chart-simple"></i><span>Analytics</span></a>
+        <a class="{{ 'active' if active_page == 'visual' else '' }}" href="/visual"><i class="fa-solid fa-cube"></i><span>Visual</span></a>
+        <a class="{{ 'active' if active_page == 'insights' else '' }}" href="/insights"><i class="fa-solid fa-message"></i><span>Insights</span></a>
+        <a class="{{ 'active' if active_page == 'settings' else '' }}" href="/settings"><i class="fa-solid fa-gear"></i><span>Settings</span></a>
+    </nav>
+    <div class="rail-status">
+        <span></span>
+        <p>Neural engine online</p>
+    </div>
+</aside>
+{% endmacro %}
+
+{% macro head(title) %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+{% endmacro %}
+
+{% macro topbar(label, status) %}
+<header class="command-topbar reveal">
+    <div class="system-chip">
+        <i class="fa-solid fa-satellite-dish"></i>
+        <span>{{ label }}</span>
+    </div>
+    <label class="top-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Search sentiment, complaints, trends, opportunities...">
+    </label>
+    <div class="operator">
+        <span>{{ status }}</span>
+        <i class="fa-solid fa-user-astronaut"></i>
+    </div>
+</header>
+{% endmacro %}
+
+{% macro scripts() %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+{% endmacro %}

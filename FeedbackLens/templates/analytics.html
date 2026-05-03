@@ -1,0 +1,41 @@
+{% from "_layout.html" import head, shell, topbar, scripts %}
+<!DOCTYPE html>
+<html lang="en">
+<head>{{ head("FeedbackLens AI Analytics") }}</head>
+<body data-page="analytics">
+    {{ shell(active_page) }}
+    <main class="command-shell">
+        {{ topbar("Analytics Matrix", "Live Demo" if total is not defined else total ~ " Reviews") }}
+
+        <section class="page-hero reveal">
+            <div class="hero-kicker"><i class="fa-solid fa-chart-simple"></i> Analytics Page</div>
+            <h1>Sentiment, complaints, and trends in one holographic layer</h1>
+            <p>{% if sentiment is defined %}Latest scan result: {{ sentiment }} with score {{ score }}.{% else %}Demo analytics are loaded until you run a scan from the Scanner page.{% endif %}</p>
+        </section>
+
+        <section class="metric-constellation">
+            <article class="metric-capsule reveal tilt-card"><div class="radial-meter percent-meter" data-kind="positive"><span>0%</span></div><div><small>Positive</small><strong>Customer Delight</strong></div></article>
+            <article class="metric-capsule reveal delay-1 tilt-card"><div class="radial-meter danger percent-meter" data-kind="negative"><span>0%</span></div><div><small>Negative</small><strong>Friction Signals</strong></div></article>
+            <article class="metric-capsule reveal delay-2 tilt-card"><div class="radial-meter calm percent-meter" data-kind="neutral"><span>0%</span></div><div><small>Neutral</small><strong>Watchlist Zone</strong></div></article>
+            <article class="metric-capsule reveal delay-3 tilt-card"><div class="radial-meter trust" data-value="94"><span>94%</span></div><div><small>Trust Score</small><strong>{{ total if total is defined else "1.2K" }} Reviews</strong></div></article>
+        </section>
+
+        <section class="hologram-grid">
+            <div class="holo-panel reveal tilt-card"><div class="panel-heading"><span>Sentiment Donut</span><i class="fa-solid fa-chart-pie"></i></div><canvas id="sentimentChart"></canvas></div>
+            <div class="holo-panel reveal delay-1 tilt-card"><div class="panel-heading"><span>Complaints Heatmap</span><i class="fa-solid fa-grip"></i></div><canvas id="heatmapChart"></canvas></div>
+            <div class="holo-panel wide reveal delay-2 tilt-card"><div class="panel-heading"><span>Trend Chart</span><i class="fa-solid fa-wave-square"></i></div><canvas id="trendChart"></canvas></div>
+            <div class="holo-panel wide reveal delay-3 tilt-card"><div class="panel-heading"><span>Keyword Pulse Graph</span><i class="fa-solid fa-key"></i></div><canvas id="keywordChart"></canvas></div>
+        </section>
+    </main>
+    <script id="serverData" type="application/json">
+        {{ {
+            "total": total|default(1240),
+            "insight": insight|default("Demo analytics are active. Run a scan to generate live AI insights."),
+            "trends": trends|default({"positive": 72, "negative": 18, "neutral": 10}),
+            "issues": issues|default({"delivery": 38, "quality": 24, "service": 19, "price": 12}),
+            "keywords": keywords|default(["delivery", "quality", "refund", "packaging", "support"])
+        } | tojson }}
+    </script>
+    {{ scripts() }}
+</body>
+</html>

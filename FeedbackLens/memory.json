@@ -1,0 +1,62 @@
+[
+    {
+        "timestamp": "2026-04-21 10:44:42.937295",
+        "insight": "\nOverall Sentiment: Positive \ud83d\ude0a\n\nAverage Score: 0.26\n\nInsights:\n- Positive \u2192 Customers are satisfied\n- Negative \u2192 Issues detected\n"
+    },
+    {
+        "timestamp": "2026-04-21 10:49:25.537983",
+        "insight": "\nOverall Sentiment: Positive \ud83d\ude0a\n\nAverage Score: 0.26\n\nInsights:\n- Positive \u2192 Customers are satisfied\n- Negative \u2192 Issues detected\n"
+    },
+    {
+        "timestamp": "2026-04-21 10:50:05.261609",
+        "insight": "\nOverall Sentiment: Positive \ud83d\ude0a\n\nAverage Score: 0.26\n\nInsights:\n- Positive \u2192 Customers are satisfied\n- Negative \u2192 Issues detected\n"
+    },
+    {
+        "timestamp": "2026-04-21 10:52:23.036962",
+        "insight": "\nOverall Sentiment: Positive \ud83d\ude0a\n\nAverage Score: 0.26\n\nInsights:\n- Positive \u2192 Customers are satisfied\n- Negative \u2192 Issues detected\n"
+    },
+    {
+        "timestamp": "2026-04-21 10:55:09.705397",
+        "insight": "\nOverall Sentiment: Neutral \ud83d\ude10\n\nAverage Score: 0.00\n\nInsights:\n- Positive \u2192 Customers are satisfied\n- Negative \u2192 Issues detected\n"
+    },
+    {
+        "timestamp": "2026-04-21 10:58:50.843291",
+        "insight": "\nOverall Sentiment: Neutral \ud83d\ude10\n\nAverage Score: 0.00\n\nInsights:\n- Positive \u2192 Customers are satisfied\n- Negative \u2192 Issues detected\n"
+    },
+    {
+        "timestamp": "2026-04-21 16:57:43.568187",
+        "insight": "\nOverall Sentiment: Negative \ud83d\ude21\n\nAverage Score: -0.19\n\nInsights:\n- Positive \u2192 Customers are satisfied\n- Negative \u2192 Issues detected\n"
+    },
+    {
+        "timestamp": "2026-04-29 00:30:14.084589",
+        "insight": "\nOverall Sentiment: Negative \ud83d\ude21\nAverage Score: -0.19\n\nKey Observations:\n- Customers are facing issues.\n\nTop Topics:\n- not\n- poor\n- quality\n- product\n- delivery\n"
+    },
+    {
+        "timestamp": "2026-04-29 00:40:37.487901",
+        "insight": "\nOverall Sentiment: Positive \ud83d\ude0a\nAverage Score: 0.17\n\nKey Observations:\n- Customers are generally satisfied.\n\nTop Topics:\n- quality\n- phone\n- battery\n- life\n- amazing\n"
+    },
+    {
+        "timestamp": "2026-04-29 00:42:53.845470",
+        "insight": "\nOverall Sentiment: Positive \ud83d\ude0a\nAverage Score: 0.17\n\nKey Observations:\n- Customers are generally satisfied.\n\nTop Topics:\n- quality\n- phone\n- battery\n- life\n- amazing\n"
+    },
+    {
+        "timestamp": "2026-04-29 00:54:49.154838",
+        "insight": "\nOverall Sentiment: Positive \ud83d\ude0a\nAverage Score: 0.39\n\nKey Observations:\n- Customers are generally satisfied.\n\nTop Topics:\n- useful\n"
+    },
+    {
+        "timestamp": "2026-04-29 01:00:00.261691",
+        "insight": "\nOverall Sentiment: Positive \ud83d\ude0a\nAverage Score: 0.13\n\nKey Observations:\n- Customers are generally satisfied.\n\nTop Topics:\n- but\n- good\n- product\n- delivery\n- slow\n"
+    },
+    {
+        "timestamp": "2026-04-29 01:01:57.507609",
+        "insight": "\nOverall Sentiment: Positive \ud83d\ude0a\nAverage Score: 0.13\n\nKey Observations:\n- Customers are generally satisfied.\n\nTop Topics:\n- but\n- good\n- product\n- delivery\n- slow\n"
+    },
+    {
+        "timestamp": "2026-04-29 23:41:23.517326",
+        "insight": "\nOverall Sentiment: Neutral \ud83d\ude10\nAverage Score: 0.0\n\nKey Observations:\n- Mixed feedback observed.\n"
+    },
+    {
+        "timestamp": "2026-04-29 23:59:09.078853",
+        "insight": "\nOverall Sentiment: Neutral \ud83d\ude10\nAverage Score: 0.0\n\nKey Observations:\n- Mixed feedback observed.\n"
+    }
+]

@@ -1,0 +1,44 @@
+{% from "_layout.html" import head, shell, topbar, scripts %}
+<!DOCTYPE html>
+<html lang="en">
+<head>{{ head("FeedbackLens AI Scanner") }}</head>
+<body data-page="scanner">
+    {{ shell(active_page) }}
+    <main class="command-shell">
+        {{ topbar("AI Scanner Portal", "Upload Mode") }}
+
+        <section class="page-hero reveal">
+            <div class="hero-kicker"><i class="fa-solid fa-crosshairs"></i> Scanner Page</div>
+            <h1>Inject customer reviews into the neural pipeline</h1>
+            <p>Upload CSV files or paste review URLs. The scanner reacts, locks the signal, and starts the AI analysis flow.</p>
+        </section>
+
+        {% if error %}
+            <div class="system-alert reveal"><i class="fa-solid fa-triangle-exclamation"></i><span>{{ error }}</span></div>
+        {% endif %}
+
+        <section class="scanner-zone reveal">
+            <form method="POST" enctype="multipart/form-data" class="scanner-console" id="analysisForm">
+                <label class="scanner-ring" for="reviewFile" id="dropZone">
+                    <input id="reviewFile" type="file" name="file" accept=".csv">
+                    <span class="ring-pulse"></span>
+                    <span class="scanner-icon"><i class="fa-solid fa-file-csv"></i></span>
+                    <strong id="scannerTitle">Drag CSV here</strong>
+                    <small id="fileName">or click the scanner to browse</small>
+                    <span class="scanner-file-button"><i class="fa-solid fa-folder-open"></i> Choose CSV File</span>
+                    <em id="scanState">Awaiting review signal</em>
+                </label>
+                <div class="url-console">
+                    <i class="fa-solid fa-link"></i>
+                    <input id="reviewUrl" type="url" name="url" placeholder="Paste Amazon, Flipkart, Zomato, or app store review URL">
+                </div>
+                <button class="analyze-button magnetic" type="submit">
+                    <span>Activate Neural Analysis</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+            </form>
+        </section>
+    </main>
+    {{ scripts() }}
+</body>
+</html>

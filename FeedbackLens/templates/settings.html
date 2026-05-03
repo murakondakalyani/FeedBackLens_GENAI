@@ -1,0 +1,25 @@
+{% from "_layout.html" import head, shell, topbar, scripts %}
+<!DOCTYPE html>
+<html lang="en">
+<head>{{ head("FeedbackLens AI Settings") }}</head>
+<body data-page="settings">
+    {{ shell(active_page) }}
+    <main class="command-shell">
+        {{ topbar("Settings Console", "Configured") }}
+
+        <section class="page-hero reveal">
+            <div class="hero-kicker"><i class="fa-solid fa-gear"></i> Settings Page</div>
+            <h1>Control how the neural engine behaves</h1>
+            <p>Profile, theme mode, export preferences, and alert settings keep the premium experience presentation-ready.</p>
+        </section>
+
+        <section class="settings-grid">
+            <div class="signal-panel reveal tilt-card"><div class="panel-heading"><span>Profile</span><i class="fa-solid fa-user-astronaut"></i></div><p>Faculty Demo Operator</p><strong>feedbacklens.ai</strong></div>
+            <div class="signal-panel reveal delay-1 tilt-card"><div class="panel-heading"><span>Theme Mode</span><i class="fa-solid fa-moon"></i></div><p>Futuristic dark neural mode</p><button class="secondary-action">Locked Premium</button></div>
+            <div class="signal-panel reveal delay-2 tilt-card"><div class="panel-heading"><span>Export Data</span><i class="fa-solid fa-file-export"></i></div><p>Export insights, charts, and summary reports.</p><button class="primary-action">Export Report</button></div>
+            <div class="signal-panel reveal delay-3 tilt-card"><div class="panel-heading"><span>Notifications</span><i class="fa-solid fa-bell"></i></div><p>Alert when complaint spikes or praise clusters appear.</p><button class="secondary-action">Alerts Enabled</button></div>
+        </section>
+    </main>
+    {{ scripts() }}
+</body>
+</html>
