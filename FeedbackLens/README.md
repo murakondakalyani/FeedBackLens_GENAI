@@ -16,10 +16,6 @@ https://github.com/user-attachments/assets/a92a2ff9-4b15-4378-a89a-e04eab15b823
 
 🎯 Problem Statement
 
-https://github.com/user-attachments/assets/b61ecdca-b358-4ff5-90c9-d095b13d489e
-
-
-
 Businesses receive thousands of customer reviews across multiple platforms such as Amazon, Flipkart, Zomato, and App Stores.
 
 Manually reading and analyzing these reviews is:
