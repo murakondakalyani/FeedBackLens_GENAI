@@ -1,39 +1,146 @@
-FeedBackLens – AI-Powered Customer Review Analysis
-Overview
+🚀 FeedBackLens AI – Customer Review Intelligence Platform
 
-FeedBackLens is an AI-powered sentiment analysis platform that helps businesses, researchers, and product teams understand customer feedback from uploaded review datasets or online review sources. The system automatically analyzes reviews, identifies sentiment, extracts keywords, detects recurring issues, generates actionable insights, and visualizes trends.
 
-The project combines Natural Language Processing (NLP), Large Language Models (LLMs), and data visualization to transform raw customer feedback into meaningful business intelligence.
+📌 Overview
 
-Features
-Review Collection
-Upload customer reviews through CSV files
-Fetch reviews from external URLs
-Support for multiple review sources
-Sentiment Analysis
+FeedBackLens AI is an advanced customer review analysis platform that transforms raw customer feedback into actionable business intelligence using Natural Language Processing (NLP) and Generative AI.
+
+The system automatically analyzes reviews, detects customer sentiment, identifies recurring complaints, extracts important keywords, visualizes trends, and generates AI-powered recommendations to help organizations make data-driven decisions.
+
+🎯 Problem Statement
+
+Businesses receive thousands of customer reviews across multiple platforms such as Amazon, Flipkart, Zomato, and App Stores.
+
+Manually reading and analyzing these reviews is:
+
+Time-consuming
+Error-prone
+Difficult to scale
+
+FeedBackLens AI solves this problem by automatically converting customer feedback into meaningful insights and recommendations.
+
+✨ Key Features
+📂 Review Collection
+Upload customer reviews using CSV files
+Analyze review URLs from online platforms
+Supports multiple review sources
+😊 Sentiment Analysis
+
 Classifies reviews into:
+
 Positive
 Negative
 Neutral
-Generates sentiment scores
-AI-Powered Insights
-Extracts important keywords
-Identifies common customer concerns
-Generates business recommendations
-Summarizes customer opinions
-Trend Analysis
-Stores previous analysis results
-Compares current feedback with historical trends
-Tracks sentiment changes over time
-Data Visualization
-Trend graphs
-Sentiment charts
-Analytics dashboard
-Interactive Dashboard
-Clean web interface built using Flask
-Analytics and visualization pages
-User-friendly review scanner
-Technology Stack
+
+Provides sentiment scores and emotional insights.
+
+🔍 Complaint Detection
+
+Identifies recurring issues related to:
+
+Delivery
+Product Quality
+Pricing
+Customer Service
+🧠 AI-Powered Recommendations
+
+Generates intelligent business suggestions based on customer feedback patterns.
+
+📈 Trend Analysis
+
+Tracks sentiment changes over time and compares historical review data.
+
+📊 Interactive Visualizations
+Sentiment Distribution Charts
+Complaint Heatmaps
+Trend Graphs
+Keyword Analysis Graphs
+Emotion Mapping
+⚙️ Smart Dashboard
+
+Provides a futuristic analytics dashboard for monitoring customer feedback in real time.
+
+🏗️ System Architecture
+Customer Reviews
+        │
+        ▼
+ Data Collection
+        │
+        ▼
+ Data Cleaning
+        │
+        ▼
+ Sentiment Analysis
+(TextBlob / NLP)
+        │
+        ▼
+ Keyword Extraction
+        │
+        ▼
+ AI Insights Engine
+(OpenAI API)
+        │
+        ▼
+ Visualization Layer
+        │
+        ▼
+ Analytics Dashboard
+📸 Application Modules
+🏠 Dashboard
+
+The command center of FeedBackLens AI.
+
+Functions
+Displays customer sentiment intelligence
+Shows emotional analytics
+Highlights customer opportunities and complaints
+Provides real-time analysis overview
+📥 Scanner Module
+
+Upload and process customer reviews.
+
+Functions
+Upload CSV datasets
+Enter review URLs
+Trigger AI analysis pipeline
+📊 Analytics Module
+
+Displays sentiment statistics.
+
+Metrics
+Positive Sentiment %
+Negative Sentiment %
+Neutral Sentiment %
+Trust Score
+Review Count
+📈 Visualization Module
+
+Interactive graphical representation of customer feedback.
+
+Includes
+Sentiment Donut Chart
+Complaint Heatmap
+Trend Analysis Graph
+Keyword Radar Chart
+🤖 AI Insights Module
+
+Generates intelligent recommendations.
+
+Examples
+Delivery delays increasing
+Product quality concerns detected
+Customer service improvement suggestions
+Growth opportunities identified
+⚙️ Settings Module
+
+Configure platform behavior.
+
+Features
+Profile Settings
+Export Reports
+Notification Preferences
+Theme Management
+🛠️ Tech Stack
 Frontend
 HTML5
 CSS3
@@ -41,7 +148,7 @@ JavaScript
 Backend
 Python
 Flask
-AI & NLP
+Artificial Intelligence
 OpenAI API
 TextBlob
 Data Processing
@@ -49,15 +156,17 @@ Pandas
 Requests
 Visualization
 Matplotlib
-Project Structure
-FeedBackLens/
+Storage
+JSON-based memory storage
+📂 Project Structure
+FeedBackLens-AI/
 │
 ├── app.py
 ├── requirements.txt
 ├── memory.json
 │
 ├── templates/
-│   ├── index.html
+│   ├── dashboard.html
 │   ├── scanner.html
 │   ├── analytics.html
 │   ├── visual.html
@@ -65,32 +174,23 @@ FeedBackLens/
 │   └── settings.html
 │
 ├── static/
-│   ├── style.css
-│   ├── script.js
-│   ├── pie_chart.png
-│   └── bar_chart.png
+│   ├── css/
+│   ├── js/
+│   ├── images/
 │
 ├── utils/
-│   ├── cleaner.py
 │   ├── data_loader.py
+│   ├── cleaner.py
+│   ├── sentiment.py
 │   ├── llm.py
-│   ├── memory.py
-│   └── visuals.py
+│   ├── visuals.py
+│   └── memory.py
 │
 └── datasets/
-Workflow
-User uploads a review dataset or enters a review URL.
-Reviews are cleaned and preprocessed.
-Sentiment analysis is performed.
-Important keywords are extracted.
-Customer issues are categorized.
-AI generates business insights.
-Results are stored for trend comparison.
-Visual charts and analytics are displayed.
-Installation
+⚡ Installation
 Clone Repository
-git clone https://github.com/yourusername/FeedBackLens.git
-cd FeedBackLens
+git clone https://github.com/yourusername/FeedBackLens-AI.git
+cd FeedBackLens-AI
 Create Virtual Environment
 python -m venv venv
 Activate Environment
@@ -104,92 +204,82 @@ Linux/Mac:
 source venv/bin/activate
 Install Dependencies
 pip install -r requirements.txt
-Install TextBlob Corpora
-python -m textblob.download_corpora
-Configure API Key
+Configure OpenAI Key
 
-Windows PowerShell:
+Windows:
 
-$env:OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
+$env:OPENAI_API_KEY="YOUR_API_KEY"
 
 Linux/Mac:
 
-export OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
-Running the Application
+export OPENAI_API_KEY="YOUR_API_KEY"
+▶️ Run Application
 python app.py
 
-Open your browser:
+Open browser:
 
 http://127.0.0.1:5000
-Supported Review Sources
+📊 Sample Workflow
+Step 1
+
+Upload customer reviews.
+
+Step 2
+
+AI performs sentiment analysis.
+
+Step 3
+
+Keywords and complaints are extracted.
+
+Step 4
+
+Visual analytics are generated.
+
+Step 5
+
+AI recommendations are displayed.
+
+Step 6
+
+Reports can be exported for decision-making.
+
+💡 Use Cases
 E-Commerce Platforms
-Amazon Reviews
-Flipkart Reviews
-Restaurant Reviews
-Zomato Reviews
+Product review analysis
+Customer satisfaction tracking
+Complaint identification
+Restaurants
+Food quality feedback
+Service improvement analysis
 Mobile Applications
-Google Play Store Reviews
-Custom CSV Files
-
-Example format:
-
-review
-Great product and fast delivery
-Excellent customer support
-Poor packaging quality
-Example Use Cases
-E-Commerce Analysis
-Product satisfaction tracking
-Customer issue detection
-Feature improvement suggestions
-Restaurant Feedback
-Food quality analysis
-Service evaluation
-Customer experience monitoring
-App Review Monitoring
-Bug identification
-Feature request extraction
-User satisfaction measurement
-Future Enhancements
-Real-time review monitoring
+App review monitoring
+Feature request identification
+Research & Analytics
+Consumer behavior analysis
+Market intelligence
+🔮 Future Enhancements
+Real-time review streaming
 Multi-language sentiment analysis
-Advanced dashboards
+Advanced LLM-powered reporting
+PDF report generation
 User authentication
-Review source integrations
-Predictive customer satisfaction analytics
-Export reports as PDF
-Learning Outcomes
+Cloud deployment
+Predictive customer satisfaction forecasting
+🎥 Demo Video
+
+Watch the project demonstration here:
+
+Add YouTube Demo Link Here
+📚 Learning Outcomes
 
 This project demonstrates:
 
 Natural Language Processing (NLP)
 Sentiment Analysis
+Generative AI Integration
 Prompt Engineering
-OpenAI API Integration
 Data Visualization
-Flask Web Development
+Flask Development
 Customer Feedback Analytics
-Trend Analysis Systems
-
-
-Project Type: Generative AI + NLP + Sentiment Analysis Platform
-
-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
-
-fc-1db92eb1546f4846a2cef39b5226a872
-
-$env:OPENAI_API_KEY="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"
-$env:FIRECRAWL_API_KEY="fc-1db92eb1546f4846a2cef39b5226a872"
-
-pip install flask pandas requests openai
-
-pip install textblob
-python -m textblob.download_corpora
-
-🛒 E-commerce reviews
-https://www.amazon.in/product-reviews/B0XXXX
-https://www.flipkart.com/product-reviews/XXXX
-🍽 Restaurant reviews
-https://www.zomato.com/your-city/restaurant-name/reviews
-📱 App reviews (web version)
-https://play.google.com/store/apps/details?id=app_name&showAllReviews=true
+Business Intelligence Systems
