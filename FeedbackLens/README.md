@@ -7,7 +7,18 @@ FeedBackLens AI is an advanced customer review analysis platform that transforms
 
 The system automatically analyzes reviews, detects customer sentiment, identifies recurring complaints, extracts important keywords, visualizes trends, and generates AI-powered recommendations to help organizations make data-driven decisions.
 
+
+
+
+https://github.com/user-attachments/assets/a92a2ff9-4b15-4378-a89a-e04eab15b823
+
+
+
 🎯 Problem Statement
+
+https://github.com/user-attachments/assets/b61ecdca-b358-4ff5-90c9-d095b13d489e
+
+
 
 Businesses receive thousands of customer reviews across multiple platforms such as Amazon, Flipkart, Zomato, and App Stores.
 
